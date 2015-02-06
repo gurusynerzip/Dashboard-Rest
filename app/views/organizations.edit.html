@@ -1,0 +1,51 @@
+<div class="container marketing">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel-wrapper">
+        <div class="panel-title">
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="text" value="{{org.name}}">
+            </div>
+          </div>
+        </div>
+        <div class="panel-stage">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel-wrapper">
+                <div class="panel-title">
+                  Billable Vs Bench
+                </div>
+                <div class="panel-stage">
+                  TBD
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel-wrapper">
+                <div class="panel-title">
+                  Projects
+                </div>
+                <div class="panel-stage">
+                  <ul>
+                    <li ng-repeat = "project in org.projects">
+                      <input type="text" value="{{project.name}}">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-notes">
+          Owned by {{org.owner.name}}
+        </div>
+        <div>
+          <button class="btn btn-primary" ng-click="updateOrganization()"><span class="glyphicon glyphicon-edit">&nbsp;Update</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
